@@ -1,7 +1,12 @@
+import java.util.Scanner;
 public class Dateable {
 
     public static void main(String[] args) {
-
+        Scanner user_age = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int your_age = user_age.nextInt();
+        int min_age = (your_age/2) + 7;
+        System.out.println(your_age + "-year olds should date somebody who is atleast " + min_age + " years old.");
     }
 }
 /*
